@@ -90,10 +90,7 @@ class App extends Component {
               type="checkbox"
               defaultChecked={this.stateIncisOnMailingList}
               onChange={(event) =>
-                // Your code here!
-                // Use setState to update the flag in state for the checkbox
-                // Hint: use event.target.checked
-                this.setState()
+                this.setState({ isOnMailingList: event.target.checked })
               }
             />
             Sign me up for the mailing list!
